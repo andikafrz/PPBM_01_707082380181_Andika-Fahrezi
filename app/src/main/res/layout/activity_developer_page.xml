@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/developerpage"
+    tools:context=".DeveloperPage">
+
+    <LinearLayout
+        android:id="@+id/welcome_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="480dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to \nMy Page"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:fontFamily="@font/sfprodisplaybold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/roundform5"
+                android:src="@drawable/instagramlogo"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/roundform5"
+                android:src="@drawable/linkedin"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/roundform5"
+                android:src="@drawable/github1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_page"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="------------------------- About Me -------------------------"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sfprodisplaymedium"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_me"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Salam! Perkenalkan, saya adalah Andika Fahrezi, seorang mahasiswa berusia 21 tahun yang tengah mengejar gelar D4 Teknologi Rekayasa Multimedia di Telkom University. Saya juga seorang desainer UI/UX yang bersemangat untuk menciptakan pengalaman digital yang menarik dan mudah digunakan. Mari berkolaborasi untuk menciptakan solusi desain yang inovatif!"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
